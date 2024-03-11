@@ -1,0 +1,93 @@
+.logo{
+    width: 85px;
+}
+
+.logo-container {
+    display: inline-block;
+    vertical-align: middle;
+    
+}
+
+.title {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px; /* Espacio entre el logo y el texto */
+    color: blue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50; 
+    color: white; 
+    padding: 10px 20px;
+    border: none; 
+    cursor: pointer; 
+    border-radius: 5px; 
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #45a049; 
+  }
+
+body {
+    background-color: lightblue;
+}
+
+.tarjeta-producto {
+    border: 15px solid #ccc;
+    border-radius: 15px;
+    padding: 3px;
+    margin: 10px;
+    width: 200px;
+    display: inline-block;
+    text-align: center;
+    background:white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.tarjeta-producto img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.tarjeta-producto h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.tarjeta-producto p {
+    font-size: 25px;
+    
+    
+}
+
+.tarjeta-producto button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.tarjeta-producto button:hover {
+    background-color: #0056b3;
+}
+
+.busqueda {
+    padding: 10px; 
+    font-size: 16px; 
+    border-radius: 20px; 
+    border: 2px solid #ccc; 
+    width: 300px; 
+    background-color: #f2f2f2; 
+    margin-left: 450px;
+  }
+  
+  
+  .busqueda::placeholder {
+    color: #999;
+  }
+  
+  
