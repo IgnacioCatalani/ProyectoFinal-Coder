@@ -90,4 +90,41 @@ body {
     color: #999;
   }
   
-  
+  /*estilo carrito*/
+
+#carrito {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: #4CAF50;
+}
+
+#carrito th, #carrito td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#carrito th {
+    background-color: #f2f2f2;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#carrito td {
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+#carrito button {
+    padding: 5px 10px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#carrito button:hover {
+    background-color: #d32f2f;
+}
+

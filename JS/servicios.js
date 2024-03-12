@@ -30,8 +30,7 @@ productos.forEach(producto => {
     boton.textContent = 'Añadir al carrito';
     
     boton.addEventListener('click', () => {
-        
-        console.log(`Añadir al carrito: ${producto.nombre}`);
+        agregarAlCarrito(producto);
     });
     tarjeta.appendChild(boton);
 
@@ -69,3 +68,46 @@ inputBusqueda.addEventListener('blur', () => {
     });
 });
 
+// CARRITO
+
+function agregarAlCarrito(producto) {
+    let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+    carrito.push(producto);
+    localStorage.setItem('carrito', JSON.stringify(carrito));
+
+    
+    actualizarCarritoVisual();
+}
+
+function actualizarCarritoVisual() {
+    const carritoTable = document.getElementById('carrito').getElementsByTagName('tbody')[0];
+    carritoTable.innerHTML = '';
+
+    let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+    carrito.forEach(producto => {
+        const fila = document.createElement('tr');
+        fila.innerHTML = `
+            <td>${producto.nombre}</td>
+            <td>$${producto.precio}</td>
+            <td><button onclick="eliminarDelCarrito(${producto.id})">Eliminar</button></td>
+        `;
+        carritoTable.appendChild(fila);
+    });
+}
+
+function eliminarDelCarrito(idProducto) {
+    let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+    carrito = carrito.filter(id => id !== idProducto);
+    localStorage.setItem('carrito', JSON.stringify(carrito));
+
+    
+    actualizarCarritoVisual();
+}
+
+
+actualizarCarritoVisual();
+
+function terminarCompra() {
+    localStorage.removeItem('carrito');
+    actualizarCarritoVisual(); 
+}
