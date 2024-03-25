@@ -31,9 +31,18 @@ function guardarEnLS(arr){
     return localStorage.setItem("usuarios", JSON.stringify(arr))
 }
 
+
+
 formRegistro.addEventListener("submit", (e)=>{
-  e.preventDefault()
-  const newUsuario= new Usuario(nombre.value, userReg.value, email.value, passReg.value)
-  guardarUsuario(newUsuario)
-  guardarEnLS(usuarios)
-})
+    e.preventDefault()
+    const newUsuario= new Usuario(nombre.value, userReg.value, email.value, passReg.value)
+    guardarUsuario(newUsuario)
+    guardarEnLS(usuarios)
+  })
+
+
+
+
+
+
+
