@@ -11,7 +11,7 @@
 .title {
     display: inline-block;
     vertical-align: middle;
-    margin-left: 10px; /* Espacio entre el logo y el texto */
+    margin-left: 10px; 
     color: blue;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }

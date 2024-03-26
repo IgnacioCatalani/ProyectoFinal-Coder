@@ -1,0 +1,62 @@
+[
+    {
+       "id":1,
+       "nombre":"Pastillas de freno",
+       "precio":30000,
+       "img":"./Img/psf.jpg"
+    },
+    {
+       "id":2,
+       "nombre":"Fuelles",
+       "precio":4500,
+       "img":"./Img/fuelles.jpg"
+    },
+    {
+       "id":3,
+       "nombre":"Cazoletas",
+       "precio":18900,
+       "img":"./Img/cazoletas.jpg"
+    },
+    {
+       "id":4,
+       "nombre":"Bombas Hidráulicas",
+       "precio":50000,
+       "img":"./Img/bomba.jpg"
+    },
+    {
+       "id":5,
+       "nombre":"Kit de Embrague",
+       "precio":150000,
+       "img":"./Img/kitembrague.jpg"
+    },
+    {
+       "id":6,
+       "nombre":"Disco de freno",
+       "precio":185000,
+       "img":"./Img/discofreno.jpg"
+    },
+    {
+       "id":7,
+       "nombre":"Amortiguadores",
+       "precio":45000,
+       "img":"./Img/amortiguadores.jpg"
+    },
+    {
+       "id":8,
+       "nombre":"Extremo de Dirección",
+       "precio":22000,
+       "img":"./Img/extremo.jpg"
+    },
+    {
+       "id":9,
+       "nombre":"Kit de Parrillas",
+       "precio":145000,
+       "img":"./Img/parrillas.jpg"
+    },
+    {
+       "id":10,
+       "nombre":"Cajas de Dirección",
+       "precio":65000,
+       "img":"./Img/cajas.jpg"
+    }
+ ]
